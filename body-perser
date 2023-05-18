@@ -1,0 +1,19 @@
+//===How to use body-parser===//
+
+//Step 1: Install body-parser
+npm install body-parser
+
+//Step 2: Import body-parser
+const bodyParser = require('body-parser');
+
+//Step 3: For parsing JSON data
+app.use(bodyParser.json());
+
+//Step 4: For parsing URL-encoded form data
+app.use(bodyParser.urlencoded({ extended: false }));
+
+app.post('/example', (req, res) => {
+  const data = req.body;
+  // Process the data as needed
+  res.send('Data received');
+});
