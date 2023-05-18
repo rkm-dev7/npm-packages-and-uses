@@ -1,0 +1,12 @@
+//===How to use UUID===//
+
+//Step 1: Install the uuid
+npm install uuid
+
+//Step 2: Import the uuid module
+const { v4: uuidv4 } = require('uuid');
+
+//Step 3: Generate a UUID using the uuidv4
+const uuid = uuidv4();
+
+console.log(uuid) //output:97ad22f7-d0c2-4cfc-bcd0-b32a0a265a5f
